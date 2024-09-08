@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise for Maria Carmela Aliyah Tadoy</title>
+    <style>
+        /* Import a simple Google Font */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #800080; /* Plain purple background */
+            color: #ffffff;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #ffccff;
+            text-shadow: 2px 2px 5px #000000;
+        }
+
+        .button {
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 15px;
+            border: 2px solid #fff;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #ffccff;
+        }
+
+        .button-red { background-color: rgba(255, 0, 0, 0.7); color: white; }
+        .button-yellow { background-color: rgba(255, 255, 0, 0.7); color: black; }
+        .button-white { background-color: rgba(255, 255, 255, 0.7); color: black; }
+        .button-black { background-color: rgba(0, 0, 0, 0.7); color: white; }
+        .button-pink { background-color: rgba(255, 182, 193, 0.7); color: white; }
+
+        #message {
+            font-size: 1.5em;
+            margin-top: 20px;
+            color: #ffccff;
+            text-shadow: 1px 1px 4px #000000;
+        }
+
+        #gift-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .gift {
+            width: 200px;
+            height: 200px;
+            background: url('https://media.giphy.com/media/JWm7EtJOAgk3t5FYbk/giphy.gif') no-repeat center;
+            background-size: cover;
+            margin: 0 auto;
+            border: 3px solid #ffccff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #ffccff;
+        }
+
+        #open-gift-button {
+            display: none;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: green;
+            color: white;
+            border: 2px solid #ffffff;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        #open-gift-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #ffffff, 0 0 20px #00ff00;
+        }
+
+        #final-message {
+            display: none;
+            margin-top: 20px;
+            font-size: 1.8em;
+            color: #ffccff;
+            text-shadow: 2px 2px 5px #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>HAPPY BIRTHDAY, MARIA CARMELA ALIYAH TADOY</h1>
+
+    <button class="button button-red" onclick="showMessage('stay sigma🗿stay slayable 💅 and stay away from me 🫷🫸')">❤</button>
+    <button class="button button-yellow" onclick="showMessage('study hard for your future🔮 don\'t go to school 🎒📚 just for fun')">💛</button>
+    <button class="button button-white" onclick="showMessage('stay happy 😊 and stay pretty ✨❤')">🤍</button>
+    <button class="button button-black" onclick="showMessage('PUTANGINA MO YUN LANG 👹😑')">🖤</button>
+    <button class="button button-pink" onclick="showGift()">💓</button>
+
+    <p id="message"></p>
+
+    <div id="gift-container">
+        <div class="gift"></div>
+        <button id="open-gift-button" onclick="openGift()">Open the Gift</button>
+    </div>
+
+    <p id="final-message"></p>
+
+    <script>
+        function showMessage(message) {
+            document.getElementById('message').textContent = message;
+        }
+
+        function showGift() {
+            document.getElementById('message').textContent = '';  // Clear any previous message
+            document.getElementById('gift-container').style.display = 'block';
+            document.getElementById('open-gift-button').style.display = 'block';
+        }
+
+        function openGift() {
+            document.getElementById('open-gift-button').style.display = 'none';
+            document.getElementById('final-message').textContent = 'REGALO 🎁 KO YUNG SARILI KO 🎀 UNIQUE ❄ KASE AKO,,, I\'M SKIBIDI SIGMA FORTNITE DIGITAL CHAMBA GYATT XXXTENTACION SKIBIDI RIZZLER💗';
+            document.getElementById('final-message').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
